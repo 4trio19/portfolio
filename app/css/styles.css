@@ -9,7 +9,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 200px auto 200px;
+  grid-template-columns: 100px auto 100px;
   text-align: center;
   font-size: 2em; }
 
@@ -28,12 +28,13 @@ body {
   display: grid;
   grid-template-rows: 100px auto 125px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "logo header header header" "logo content content content" "footer footer footer footer"; }
+  grid-template-areas: "logo header header taco" "logo content sandwich sandwich" "footer footer burger burger"; }
 
 .logo {
   grid-area: logo;
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/45/a3/3d/45a33dd954a44e086bcce0d4f84b1cd7.jpg");
-  background-size: contain;
+  background-size: 250%;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: white; }
 
@@ -41,7 +42,7 @@ body {
   height: 100%;
   grid-area: content;
   background-image: url("http://abduzeedo.com/sites/default/files/styles/home_cover/public/originals/7k9a1813-edit-1277x848_1.jpg?itok=hp7-eC7U");
-  background-size: cover; }
+  background-size: contain; }
 
 .footer {
   grid-area: footer;
@@ -54,3 +55,18 @@ body {
   grid-area: header;
   background-image: url("http://www.telegraph.co.uk/content/dam/Travel/leadAssets/32/43/graffiti_3243235a-large.jpg");
   background-size: contain; }
+
+.sandwich {
+  grid-area: sandwich;
+  background-image: url("http://www.columbia.edu/~sl3731/graffitiART/Agraffitiart-s.JPG?w=640");
+  background-size: cover; }
+
+.taco {
+  grid-area: taco;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFuXP0lelMWGPNK_c9qgeMhF32pIaGsMfre-zIaWJ756lCQelU");
+  background-size: cover; }
+
+.burger {
+  grid-area: burger;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBmCT71cQSlExkbsjN_VkJY2ZNW62jMZsP9zPNdaSO6R_RZhqW_w");
+  background-size: cover; }
