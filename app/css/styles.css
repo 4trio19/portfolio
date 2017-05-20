@@ -22,6 +22,7 @@ body {
   grid-row: auto; }
 
 .main-content-area {
+  height: 100%;
   grid-column: 2 / span 1;
   grid-row: auto;
   background: lightgrey;
@@ -42,7 +43,7 @@ body {
   height: 100%;
   grid-area: content;
   background-image: url("http://abduzeedo.com/sites/default/files/styles/home_cover/public/originals/7k9a1813-edit-1277x848_1.jpg?itok=hp7-eC7U");
-  background-size: contain; }
+  background-size: cover; }
 
 .footer {
   grid-area: footer;
@@ -68,5 +69,45 @@ body {
 
 .burger {
   grid-area: burger;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBmCT71cQSlExkbsjN_VkJY2ZNW62jMZsP9zPNdaSO6R_RZhqW_w");
+  background-image: url("https://image.freepik.com/free-vector/coloured-graffiti-background_1176-1.jpg");
   background-size: cover; }
+
+@media screen and (max-width: 1099px) {
+  .main-content-area {
+    grid-column: 2 / span 1;
+    grid-row: auto;
+    background: lightgrey;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header" "burger burger burger burger" "footer footer footer logo"; } }
+
+@media screen and (max-width: 899px) {
+  .main-content-area {
+    grid-column: 2 / span 1;
+    grid-row: auto;
+    background: lightgrey;
+    display: grid;
+    grid-template-rows: 100px auto 125px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo logo header header" "logo logo burger burger" "footer footer footer taco"; } }
+
+@media screen and (max-width: 699px) {
+  .main-content-area {
+    grid-column: 2 / span 1;
+    grid-row: auto;
+    background: lightgrey;
+    display: grid;
+    grid-template-rows: 100px auto 125px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo logo header header" "content content taco taco" "footer footer taco taco"; } }
+
+@media screen and (max-width: 499px) {
+  .main-content-area {
+    grid-column: 2 / span 1;
+    grid-row: auto;
+    background: lightgrey;
+    display: grid;
+    grid-template-rows: 100px auto 125px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo header header header" "burger content content content" "footer taco taco taco"; } }
