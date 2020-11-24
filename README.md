@@ -1,2 +1,2 @@
 # portfolio
-Updated Portfolio
+Deleted portfolio files
